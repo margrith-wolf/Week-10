@@ -1,0 +1,51 @@
+* {
+  font-family: Optima, Segoe, "Segoe UI"; }
+
+html {
+  min-height: 100%; }
+
+.container {
+  background: linear-gradient(to bottom right,#C29C6D, #C8AD7F, #D0BB96, #A67B5B);
+  margin-top: 10px; }
+
+.header {
+  font-size: 8vw; }
+  .header p {
+    margin-bottom: 10px; }
+
+.nav {
+  justify-content: center; }
+  .nav .nav-link {
+    color: black; }
+
+.modal-header {
+  background-color: #D0BB96;
+  border: none; }
+
+.modal-body {
+  background-color: #D0BB96;
+  border: none; }
+  .modal-body .card-body {
+    background-color: #638a6a;
+    border: none;
+    border-radius: 5px; }
+  .modal-body .btn {
+    padding: 5px;
+    margin-top: 10px; }
+
+.modal-footer {
+  background-color: #D0BB96;
+  border: none; }
+
+.form-group {
+  text-align: center; }
+
+.table {
+  background-color: #638a6a;
+  border-radius: 5px;
+  border-color: gray; }
+  .table th, .table td {
+    text-align: center; }
+
+.spacer {
+  margin-top: 200px; }

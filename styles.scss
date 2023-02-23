@@ -1,0 +1,78 @@
+* {
+    font-family: Optima, Segoe, "Segoe UI";
+}
+
+$green: #638a6a;
+//$background1: #C99171, #DEAC85, #FECB91, #E0B87B, #B59E72, #878F6F;
+//$background2: #B77333, #D39C6E, #F1DBD0, #CB6D51;
+$background3: #C29C6D, #C8AD7F, #D0BB96, #A67B5B;
+
+html {
+    min-height: 100%;
+}
+
+.container {
+    background: $background3;
+    margin-top: 10px;
+}
+
+.header {
+    font-size: 8vw;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.nav {
+    justify-content: center;
+
+    .nav-link {
+        color: black;
+    }
+}
+
+.modal-header {
+    background-color: $tan;
+    border: none;
+}
+
+.modal-body {
+    background-color: $tan;
+    border: none;
+
+    .card-body {
+        background-color: $green;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn {
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+
+.modal-footer {
+    background-color: $tan;
+    border: none;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.table {
+    background-color: $green;
+    border-radius: 5px;
+    border-color: gray;
+
+    th, td {
+        text-align: center;
+    }
+    
+}
+
+.spacer {
+    margin-top: 200px;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plant Wishlist</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+    
+    <div class="header">
+        <p>
+            My plants
+        </p>
+    </div>
+    
+    <!-- TOP NAV BAR -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span class="fa-solid fa-house"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#openModal1" data-bs-toggle="modal" data-bs-target="#openModal1">
+                <span class="fa-solid fa-plus"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span class="fa-solid fa-leaf"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- MODAL BUTTON
+    <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#openModal">
+        <span class="fa-solid fa-plus"></span>
+    </button> -->
+
+    <!-- MODAL START WITH PLANT ADD FORM -->
+    <div class="modal fade" id="openModal1" role="dialog" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Add a Plant!</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group1">
+                                        <label for="new-start-date">Purchased Date</label>
+                                        <input type="date" class="form-control" id="new-start-date">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group1">
+                                        <label for="formControlSelect">Type</label>
+                                        <select class="form-control" id="formControlSelect">
+                                            <option>Indoor</option>
+                                            <option>Outdoor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group1">
+                                        <label for="new-plant">Plant</label>
+                                        <input type="text" class="form-control" id="new-plant" placeholder="Plant">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="add1" class="btn btn-success form-control">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- ADD PLANT TABLE -->
+    <table id="list" class="table table-hover table-default table-striped">
+        <tr>
+            <th>Plant</th>
+            <th>Date Bought</th>
+            <th>Type</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <div class="spacer"></div>
+
+    <!-- SECOND NAV BAR -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span class="fa-solid fa-bell"></span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#openModal" data-bs-toggle="modal" data-bs-target="#openModal">
+                <span class="fa-solid fa-plus"></span>
+            </a>
+        </li>
+    </ul>
+
+
+    <!-- MODAL START WITH PLANT CARE FORM -->
+    <div class="modal fade" id="openModal" role="dialog" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Add a Reminder!</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="new-start-date">Reminder Date</label>
+                                        <input type="date" class="form-control" id="new-start-date">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="formCheckSelect">What Needs to Be Done?</label><br>
+                                        <input type="checkbox" name="select" value="Water">
+                                        <label for="select1">Water</label>
+                                        <input type="checkbox" name="select" value="Sunlight">
+                                        <label for="select2">More Sunlight</label>
+                                        <input type="checkbox" name="select" value="Repot">
+                                        <label for="select3">Repot</label>
+                                        <input type="checkbox" name="select" value="Repot">
+                                        <label for="select4">All</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group">
+                                        <label for="new-plant">Plant</label>
+                                        <input type="text" class="form-control" id="what-plant" placeholder="Plant">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="add" class="btn btn-success form-control">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- REMINDER TABLE -->
+    <table id="reminders" class="table table-hover table-default table-striped">
+        <tr>
+            <th>Plant</th>
+            <th>Date</th>
+            <th>Care</th>
+            <th>Remove Plant?</th>
+        </tr>
+    </table>
+
+
+
+
+     
+    <script src="wishlist.js"></script>
+    <script src="https://kit.fontawesome.com/aaa45d5d7f.js" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
